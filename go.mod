@@ -4,8 +4,10 @@ go 1.15
 
 require (
 	github.com/bradfitz/gomemcache v0.0.0-20190913173617-a41fca850d0b // indirect
+	github.com/coopernurse/gorp v1.6.1
 	github.com/fsnotify/fsnotify v1.4.9 // indirect
 	github.com/garyburd/redigo v1.6.2 // indirect
+	github.com/go-sql-driver/mysql v1.5.0
 	github.com/go-stack/stack v1.8.0 // indirect
 	github.com/inconshreveable/log15 v0.0.0-20200109203555-b30bc20e4fd1 // indirect
 	github.com/mattn/go-colorable v0.1.7 // indirect
