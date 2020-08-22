@@ -2,12 +2,16 @@ package controllers
 
 import (
 	"github.com/revel/revel"
+	gormc "github.com/revel/modules/orm/gorm/app/controllers"
+	"mikes_app/app/models"
 )
 
 type App struct {
-	*revel.Controller
+	gormc.TxnController
 }
 
 func (c App) Index() revel.Result {
-	return c.Render()
+	var users = []models.User{}
+	c.Txn.Find(&users)
+	return c.RenderJSON(users)
 }

@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# mikes_revel_app
-A little web project to hopefully manage some sensors and perform some tasks.
-=======
 # Welcome to Revel
 
 A high-productivity web framework for the [Go language](http://www.golang.org/).
@@ -9,7 +5,7 @@ A high-productivity web framework for the [Go language](http://www.golang.org/).
 
 ### Start the web server:
 
-   revel run myapp
+   revel run
 
 ### Go to http://localhost:9000/ and you'll see:
 
@@ -45,4 +41,3 @@ The directory structure of a generated Revel application:
 * The [Revel sample apps](http://revel.github.io/examples/index.html).
 * The [API documentation](https://godoc.org/github.com/revel/revel).
 
->>>>>>> 1e732ab... Init
