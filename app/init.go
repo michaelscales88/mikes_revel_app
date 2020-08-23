@@ -2,6 +2,7 @@ package app
 
 import (
 	"github.com/revel/revel"
+	"mikes_app/app/controllers"
 )
 
 var (
@@ -28,6 +29,11 @@ func init() {
 		revel.CompressFilter,          // Compress the result.
 		revel.ActionInvoker,           // Invoke the action.
 	}
+
+	revel.OnAppStart(controllers.InitDB)
+	revel.InterceptMethod((*controllers.GormController).Begin, revel.BEFORE)
+	revel.InterceptMethod((*controllers.GormController).Commit, revel.AFTER)
+	revel.InterceptMethod((*controllers.GormController).Rollback, revel.FINALLY)
 }
 
 var HeaderFilter = func(c *revel.Controller, fc []revel.Filter) {

@@ -11,6 +11,7 @@ require (
 	github.com/go-stack/stack v1.8.0 // indirect
 	github.com/inconshreveable/log15 v0.0.0-20200109203555-b30bc20e4fd1 // indirect
 	github.com/jinzhu/gorm v1.9.16
+	github.com/lib/pq v1.1.1
 	github.com/mattn/go-colorable v0.1.7 // indirect
 	github.com/mattn/go-sqlite3 v2.0.1+incompatible // indirect
 	github.com/myesui/uuid v1.0.0 // indirect
