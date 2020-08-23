@@ -5,6 +5,8 @@
 
 module:testrunner
 # module:jobs
+# https://github.com/oblank/jwtauth
+module:jwtauth
 
 
 GET     /                                       App.Index
